@@ -21,9 +21,25 @@ body {
 }
 
 nav {
+    padding: 2vw 2vw;
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#navpart2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#navaprt2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+    font-size: 18px;
+
 }
