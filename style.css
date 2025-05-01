@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gilroy';
+    color: black
+    
+    ;
 }
 
 html,
@@ -11,12 +14,14 @@ body {
     width: 100%;
 }
 
-
+#cursor{
+  height:20px;
+}
 
 #page1 {
     height: 100vh;
     width: 100vw;
-    color: #e7c698;
+    background-color: #EFEAE3;
     position: relative;
 }
 
@@ -28,18 +33,98 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-#navpart2 {
+#navpart1 {
     display: flex;
     align-items: center;
     gap: 1vw;
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#navaprt2 h4 {
+#navpart1 h4 {
     padding: 10px 20px;
-    border: 1px solid #8a8a8a89;
+    border: 1px solid #0008;
     border-radius: 50px;
     font-weight: 500;
-    color: rgb(22, 22, 22);
+    position:relative;
+    transition: all ease 0.4s;
+    overflow:hidden;
+    color: black;
     font-size: 18px;
-
 }
+
+#navpart1 h4::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  left:0;
+  bottom:-100%;
+  border-radius:50%;
+  transition: all ease 0.4s;
+  font-size: 18px;
+}
+
+#navpart1 h4:hover::after{
+  bottom:0;
+  border-radius:0;
+}
+#navpart1 h4 a{
+  color:#oooooobb;
+  text-decoration:none;
+  position:relative;
+  z-index:9;
+}
+#navpart1 h4:hover a{
+  color:#fff;
+}
+#center{
+  height:65vh;
+  width: 100%;
+  background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
