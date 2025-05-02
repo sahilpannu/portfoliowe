@@ -6,10 +6,10 @@ main.addEventListener("mousemove", function (dets) {
 })
 main.addEventListener("mousemove", function (dets) {
     gsap.to(crsr, {
-        left: dets.x,
-        top: dets.y,
-        duration: 0.2,
-        ease: "power1.out"
+        x: dets.clientX,
+        y: dets.clientY,
+        duration: 0.15,
+        ease: "power2.out"
     });
 });
 
