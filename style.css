@@ -42,14 +42,13 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #navpart1 {
   display: flex;
   align-items: center;
   gap: 1vw;
-  position: center;
 }
 
 
