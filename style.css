@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+#main {
+  overflow: hidden;
+}
+
 #cursor {
   height: 20px;
   width: 20px;
@@ -39,11 +43,8 @@ nav {
 }
 
 #navpart1 {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  float: none;
   position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -97,7 +98,7 @@ nav {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 8vw;
   overflow: hidden;
 }
 
