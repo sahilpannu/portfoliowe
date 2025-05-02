@@ -4,14 +4,24 @@ main.addEventListener("mousemove", function (dets) {
     crsr.style.left = dets.x + "px"
     crsr.style.top = dets.y + "px"
 })
+main.addEventListener("mousemove", function (dets) {
+    gsap.to(crsr, {
+        left: dets.x,
+        top: dets.y,
+        duration: 0.2,
+        ease: "power1.out"
+    });
+});
+
 function breakTheText() {
-    var h1Text = document.querySelector("h1").textContent
+    var h1 = document.querySelector("h1") 
+    var h1Text = h1.textContent
     var splittedText = h1Text.split("")
     var clutter = ""
     splittedText.forEach(function (elem) {
         clutter += `<span>${elem}</span>`
-        h1.innerHTML = clutter
     })
+    h1.innerHTML = clutter
 }
 breakTheText()
 gsap.from("h1 span", {
