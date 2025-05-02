@@ -9,7 +9,7 @@ function breakTheText() {
     var splittedText = h1Text.split("")
     var clutter = ""
     splittedText.forEach(function (elem) {
-        clutter += '<span>${elem}</span>'
+        clutter += `<span>${elem}</span>`
         h1.innerHTML = clutter
     })
 }
