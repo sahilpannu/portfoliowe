@@ -46,11 +46,11 @@ nav {
 }
 
 #navpart1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
+
 
 #navpart1 h4 {
   padding: 10px 20px;
