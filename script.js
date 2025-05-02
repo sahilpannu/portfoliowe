@@ -1,20 +1,17 @@
 var main = document.querySelector("#page1")
 var crsr = document.querySelector("#cursor")
-main.addEventListener("mousemove", function (dets) {
-    crsr.style.left = dets.x + "px"
-    crsr.style.top = dets.y + "px"
-})
+
 main.addEventListener("mousemove", function (dets) {
     gsap.to(crsr, {
-        x: dets.clientX,
-        y: dets.clientY,
+        crsr.style.left = dets.x + "px"
+        crsr.style.top = dets.y + "px"
         duration: 0.15,
         ease: "power2.out"
     });
 });
 
 function breakTheText() {
-    var h1 = document.querySelector("h1") 
+    var h1 = document.querySelector("h1")
     var h1Text = h1.textContent
     var splittedText = h1Text.split("")
     var clutter = ""
